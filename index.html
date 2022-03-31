@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TITULO -->
+    <title>Whatsapp Sin Agendar</title>
+
+    <!-- FONT AWSOME -->
+    <script src="https://kit.fontawesome.com/19effd1234.js" crossorigin="anonymous"></script>
+
+    <!-- CCS STYLE -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- META -->
+    <meta itemprop="name" content="Whatsapp Without Contact">
+    <meta name="description"
+        content="Envia mensajes desde whatsapp web sin agendar el contacto.Send messages from whatsapp web without adding the person to contact" />
+    <meta property="byArtist" content="Diego Gonzalez King">
+    <meta name="keywords" content="Whatsapp, Contact, Without, sin, contacto, mensaje, mensagge" />
+    <meta name="author" content="Diego Gonzalez King" />
+    <meta name="copyright" content="Diego Gonzalez King" />
+    <meta name="image" content="https://wppsincontacto-32e46.web.app/images/imagenPresentacion.jpg">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400&family=Roboto:wght@100;300;400;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- ROBOTS -->
+    <meta name="robots" content="index follow" />
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- FACEBOOK -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Whatsapp Without Contact" />
+    <meta property="byArtist" content="Diego Gonzalez King">
+    <meta property="og:description"
+        content="Envia mensajes desde whatsapp web sin agendar el contacto.Send messages from whatsapp web without adding the person to contact" />
+    <meta property="og:image" content="https://wppsincontacto-32e46.web.app/images/imagenPresentacion.jpg" />
+
+    <!-- TWITTER -->
+    <meta property="twitter:type" content="website" />
+    <meta property="twitter:title" content="Whatsapp Without Contact" />
+    <meta property="byArtist" content="Diego Gonzalez King">
+    <meta property="twitter:description"
+        content="Envia mensajes desde whatsapp web sin agendar el contacto.Send messages from whatsapp web without adding the person to contact" />
+    <meta property="twitter:image" content="https://wppsincontacto-32e46.web.app/images/imagenPresentacion.jpg" />
+</head>
+
+<body>
+
+    <div id="containerPrincipal">
+        <div id="contenedorInteriorTelefono">
+            <p id="textoPresentacion">
+                Hola!
+                <br>
+                <br>
+                Esta aplicación la desarrollé para uso libre. Surge de una necesitad personal y laboral. No
+                recopila
+                datos, ni ninguna cosa extraña. Solo toma el número ingresado y lanza la app de web Whatsapp (por ahora
+                solo en Argentina).
+                <br>
+                <br>
+                Espero que les sirva!
+
+            </p>
+            <p id="textoPresentacion">
+
+            </p>
+            <div class="contenedorIntermedio">
+                <p class="textoExtra">+549</p>
+                <div id="contendeorInput01">
+                    <input id="inputCodigo" type="number">
+                </div>
+            </div>
+            <p class="subInput">CÓDIGO DE ÁREA</p>
+            <div class="contenedorIntermedio">
+                <p class="textoExtra">15</p>
+                <div id="contendeorInput02">
+                    <input id="inputTelefono" type="number">
+                </div>
+            </div>
+            <p class="subInput">NÚMERO TELÉFONO | sin espacios</p>
+            <div id="btnEscribir">
+                <p class="textoBtn">Escribir Mensaje!</p>
+            </div>
+        </div>
+
+
+
+    </div>
+    <aside>
+        <h4 id="dgk">DGK</h4>
+        <a class="logoRedes" href="https://www.instagram.com/diegogonzalezking/" target="_blank"><i
+                class="fab fa-instagram-square"></i></a>
+        <a class="logoRedes" href="https://www.linkedin.com/in/diegogonzalezking/" target="_blank"><i
+                class="fab fa-linkedin"></i></a>
+    </aside>
+
+    <script>
+        let numeroArea = document.getElementById('inputCodigo')
+        let numeroTelefono = document.getElementById('inputTelefono')
+        let btnEscribir = document.getElementById('btnEscribir')
+
+        btnEscribir.addEventListener('click', () => {
+            console.log(numeroArea.value)
+            console.log(numeroTelefono.value)
+            let paginaLanzada = 'https://web.whatsapp.com/send?phone=549' + numeroArea.value + numeroTelefono.value + '&text'
+            console.log(paginaLanzada)
+            window.open(paginaLanzada)
+        })
+
+        let clickEnter = document.addEventListener('keyup', function (event) {
+            if (event.keyCode === 13) {
+                event.preventDefault()
+                console.log(numeroArea.value)
+                console.log(numeroTelefono.value)
+                let paginaLanzada = 'https://web.whatsapp.com/send?phone=549' + numeroArea.value + numeroTelefono.value + '&text'
+                console.log(paginaLanzada)
+                window.open(paginaLanzada)
+
+            }
+        })
+
+
+    </script>
+
+</body>
+
+</html>
